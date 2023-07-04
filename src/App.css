@@ -1,7 +1,153 @@
+body{
+  margin:0;
+}
 .App {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:30px;
+  color:white;
+  height:100px;
+
+  background-color: rgb(79, 88, 214);
+  justify-content: right;
+  text-align: right;
+  align-items: center;
+  padding-right: 16px;
+}
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:15px;
+
+}
+a{
+  color:white;
+}
+.button{
+  padding-left:16px;
+  padding-right:16px;
+  padding-top:8px;
+  padding-bottom:8px;
+  color:rgb(79, 88, 214);
+  background-color: aqua;
+  border: 2px solid rgb(153, 155, 195);
+  border-radius: 16px;
+}
+.like-button{
+  font-size: 18px;
+  height:35px;
+  background-color: rgba(255, 255, 255, 0.812);
+  border-radius: 16px;
+  padding-left:10px;
+  padding-right:10px;
+
+  border:none;
+}
+.like-button:hover{
+  background-color: rgba(204, 203, 240, 0.812);
+  cursor:pointer;
+}
+.button:hover{
+  background-color: rgba(0, 204, 204, 0.79);
+  cursor:pointer;
 }
 
+.profile_pic{
+  width:50px;
+  height:50px;
+  border-radius: 30px;
+  border:none;
+}
+.error_message{
+  border:2px solid red;
+  background-color: rgba(255, 0, 0, 0.232);
+  color:red;
+  border-radius: 5px;
+
+}
+.post_form{
+  display:inline-block;
+  margin-top:50px;
+  width:300px;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:8px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  
+}
+input,textarea{
+  background-color: aqua;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  color:blue;
+}
+.posts_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+
+  justify-content: center;
+  margin-left: 16px;
+  margin-top: 32px;
+  margin-right: 16px;
+}
+.post{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+  background-color: rgb(240, 240, 240);
+  border:2px solid rgb(180, 136, 238);
+  border-radius: 15px;
+}
+.title{
+  background-color: #5782d8;
+  border-radius: 15px 15px 0 0;
+  color:white;
+}
+.body{
+  font-size: 14px;
+  text-align: left;
+  padding-left:16px;
+  padding-right:16px;
+}
+.by_user{
+  color:gray;
+  text-align: right;
+  padding-right: 16px;
+  font-size: 12px;
+}
+.like_count{
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap:16px;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +178,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
